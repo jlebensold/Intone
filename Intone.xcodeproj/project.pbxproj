@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC771E4615AA1A5000EC29A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4515AA1A5000EC29A1 /* UIKit.framework */; };
+		FC771E4815AA1A5000EC29A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4715AA1A5000EC29A1 /* Foundation.framework */; };
+		FC771E4A15AA1A5000EC29A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4915AA1A5000EC29A1 /* CoreGraphics.framework */; };
+		FC771E5015AA1A5000EC29A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC771E4E15AA1A5000EC29A1 /* InfoPlist.strings */; };
+		FC771E5215AA1A5000EC29A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5115AA1A5000EC29A1 /* main.m */; };
+		FC771E5615AA1A5000EC29A1 /* IntoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */; };
+		FC771E5915AA1A5000EC29A1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5715AA1A5000EC29A1 /* MainStoryboard.storyboard */; };
+		FC771E5C15AA1A5000EC29A1 /* IntoneFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */; };
+		FC771E5E15AA1A5000EC29A1 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5D15AA1A5000EC29A1 /* first.png */; };
+		FC771E6015AA1A5000EC29A1 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5F15AA1A5000EC29A1 /* first@2x.png */; };
+		FC771E6315AA1A5000EC29A1 /* IntoneSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */; };
+		FC771E6515AA1A5000EC29A1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E6415AA1A5000EC29A1 /* second.png */; };
+		FC771E6715AA1A5000EC29A1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E6615AA1A5000EC29A1 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC771E4115AA1A5000EC29A1 /* Intone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC771E4515AA1A5000EC29A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC771E4715AA1A5000EC29A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC771E4915AA1A5000EC29A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC771E4D15AA1A5000EC29A1 /* Intone-Info.plist */ = {isa = PBXFileReference; path = "Intone-Info.plist"; sourceTree = "<group>"; };
+		FC771E4F15AA1A5000EC29A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC771E5115AA1A5000EC29A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC771E5315AA1A5000EC29A1 /* Intone-Prefix.pch */ = {isa = PBXFileReference; path = "Intone-Prefix.pch"; sourceTree = "<group>"; };
+		FC771E5415AA1A5000EC29A1 /* IntoneAppDelegate.h */ = {isa = PBXFileReference; path = IntoneAppDelegate.h; sourceTree = "<group>"; };
+		FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneAppDelegate.m; sourceTree = "<group>"; };
+		FC771E5815AA1A5000EC29A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FC771E5A15AA1A5000EC29A1 /* IntoneFirstViewController.h */ = {isa = PBXFileReference; path = IntoneFirstViewController.h; sourceTree = "<group>"; };
+		FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneFirstViewController.m; sourceTree = "<group>"; };
+		FC771E5D15AA1A5000EC29A1 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		FC771E5F15AA1A5000EC29A1 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		FC771E6115AA1A5000EC29A1 /* IntoneSecondViewController.h */ = {isa = PBXFileReference; path = IntoneSecondViewController.h; sourceTree = "<group>"; };
+		FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneSecondViewController.m; sourceTree = "<group>"; };
+		FC771E6415AA1A5000EC29A1 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		FC771E6615AA1A5000EC29A1 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC771E3E15AA1A5000EC29A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC771E4615AA1A5000EC29A1 /* UIKit.framework in Frameworks */,
+				FC771E4815AA1A5000EC29A1 /* Foundation.framework in Frameworks */,
+				FC771E4A15AA1A5000EC29A1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC771E3615AA1A5000EC29A1 = {
+			isa = PBXGroup;
+			children = (
+				FC771E4B15AA1A5000EC29A1 /* Intone */,
+				FC771E4415AA1A5000EC29A1 /* Frameworks */,
+				FC771E4215AA1A5000EC29A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC771E4215AA1A5000EC29A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC771E4115AA1A5000EC29A1 /* Intone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC771E4415AA1A5000EC29A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC771E4515AA1A5000EC29A1 /* UIKit.framework */,
+				FC771E4715AA1A5000EC29A1 /* Foundation.framework */,
+				FC771E4915AA1A5000EC29A1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC771E4B15AA1A5000EC29A1 /* Intone */ = {
+			isa = PBXGroup;
+			children = (
+				FC771E5415AA1A5000EC29A1 /* IntoneAppDelegate.h */,
+				FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */,
+				FC771E5715AA1A5000EC29A1 /* MainStoryboard.storyboard */,
+				FC771E5A15AA1A5000EC29A1 /* IntoneFirstViewController.h */,
+				FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */,
+				FC771E5D15AA1A5000EC29A1 /* first.png */,
+				FC771E5F15AA1A5000EC29A1 /* first@2x.png */,
+				FC771E6115AA1A5000EC29A1 /* IntoneSecondViewController.h */,
+				FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */,
+				FC771E6415AA1A5000EC29A1 /* second.png */,
+				FC771E6615AA1A5000EC29A1 /* second@2x.png */,
+				FC771E4C15AA1A5000EC29A1 /* Supporting Files */,
+			);
+			path = Intone;
+			sourceTree = "<group>";
+		};
+		FC771E4C15AA1A5000EC29A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC771E4D15AA1A5000EC29A1 /* Intone-Info.plist */,
+				FC771E4E15AA1A5000EC29A1 /* InfoPlist.strings */,
+				FC771E5115AA1A5000EC29A1 /* main.m */,
+				FC771E5315AA1A5000EC29A1 /* Intone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC771E4015AA1A5000EC29A1 /* Intone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC771E6A15AA1A5000EC29A1 /* Build configuration list for PBXNativeTarget "Intone" */;
+			buildPhases = (
+				FC771E3D15AA1A5000EC29A1 /* Sources */,
+				FC771E3E15AA1A5000EC29A1 /* Frameworks */,
+				FC771E3F15AA1A5000EC29A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intone;
+			productName = Intone;
+			productReference = FC771E4115AA1A5000EC29A1 /* Intone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC771E3815AA1A5000EC29A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Intone;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "J. F. Lebensold";
+			};
+			buildConfigurationList = FC771E3B15AA1A5000EC29A1 /* Build configuration list for PBXProject "Intone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC771E3615AA1A5000EC29A1;
+			productRefGroup = FC771E4215AA1A5000EC29A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC771E4015AA1A5000EC29A1 /* Intone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC771E3F15AA1A5000EC29A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC771E5015AA1A5000EC29A1 /* InfoPlist.strings in Resources */,
+				FC771E5915AA1A5000EC29A1 /* MainStoryboard.storyboard in Resources */,
+				FC771E5E15AA1A5000EC29A1 /* first.png in Resources */,
+				FC771E6015AA1A5000EC29A1 /* first@2x.png in Resources */,
+				FC771E6515AA1A5000EC29A1 /* second.png in Resources */,
+				FC771E6715AA1A5000EC29A1 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC771E3D15AA1A5000EC29A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC771E5215AA1A5000EC29A1 /* main.m in Sources */,
+				FC771E5615AA1A5000EC29A1 /* IntoneAppDelegate.m in Sources */,
+				FC771E5C15AA1A5000EC29A1 /* IntoneFirstViewController.m in Sources */,
+				FC771E6315AA1A5000EC29A1 /* IntoneSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC771E4E15AA1A5000EC29A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC771E4F15AA1A5000EC29A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC771E5715AA1A5000EC29A1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC771E5815AA1A5000EC29A1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC771E6815AA1A5000EC29A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC771E6915AA1A5000EC29A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC771E6B15AA1A5000EC29A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Intone/Intone-Prefix.pch";
+				INFOPLIST_FILE = "Intone/Intone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC771E6C15AA1A5000EC29A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Intone/Intone-Prefix.pch";
+				INFOPLIST_FILE = "Intone/Intone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC771E3B15AA1A5000EC29A1 /* Build configuration list for PBXProject "Intone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC771E6815AA1A5000EC29A1 /* Debug */,
+				FC771E6915AA1A5000EC29A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC771E6A15AA1A5000EC29A1 /* Build configuration list for PBXNativeTarget "Intone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC771E6B15AA1A5000EC29A1 /* Debug */,
+				FC771E6C15AA1A5000EC29A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC771E3815AA1A5000EC29A1 /* Project object */;
+}
