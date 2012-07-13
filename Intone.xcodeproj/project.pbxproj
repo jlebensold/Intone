@@ -14,12 +14,14 @@
 		FC771E5215AA1A5000EC29A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5115AA1A5000EC29A1 /* main.m */; };
 		FC771E5615AA1A5000EC29A1 /* IntoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */; };
 		FC771E5915AA1A5000EC29A1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5715AA1A5000EC29A1 /* MainStoryboard.storyboard */; };
-		FC771E5C15AA1A5000EC29A1 /* IntoneFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */; };
 		FC771E5E15AA1A5000EC29A1 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5D15AA1A5000EC29A1 /* first.png */; };
 		FC771E6015AA1A5000EC29A1 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E5F15AA1A5000EC29A1 /* first@2x.png */; };
-		FC771E6315AA1A5000EC29A1 /* IntoneSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */; };
 		FC771E6515AA1A5000EC29A1 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E6415AA1A5000EC29A1 /* second.png */; };
 		FC771E6715AA1A5000EC29A1 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC771E6615AA1A5000EC29A1 /* second@2x.png */; };
+		FC771E6F15AA1C2F00EC29A1 /* IntoneFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E6E15AA1C2F00EC29A1 /* IntoneFirstViewController.m */; };
+		FC771E7615AB52B600EC29A1 /* PrayerCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E7515AB52B600EC29A1 /* PrayerCategory.m */; };
+		FCA033D415AF6F8300D4B09C /* intone.xml in Resources */ = {isa = PBXBuildFile; fileRef = FCA033D315AF6F8300D4B09C /* intone.xml */; };
+		FCA033DA15AFF9EE00D4B09C /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA033D915AFF9EE00D4B09C /* libxml2.2.7.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +36,16 @@
 		FC771E5415AA1A5000EC29A1 /* IntoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntoneAppDelegate.h; sourceTree = "<group>"; };
 		FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneAppDelegate.m; sourceTree = "<group>"; };
 		FC771E5815AA1A5000EC29A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		FC771E5A15AA1A5000EC29A1 /* IntoneFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntoneFirstViewController.h; sourceTree = "<group>"; };
-		FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneFirstViewController.m; sourceTree = "<group>"; };
 		FC771E5D15AA1A5000EC29A1 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		FC771E5F15AA1A5000EC29A1 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		FC771E6115AA1A5000EC29A1 /* IntoneSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntoneSecondViewController.h; sourceTree = "<group>"; };
-		FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoneSecondViewController.m; sourceTree = "<group>"; };
 		FC771E6415AA1A5000EC29A1 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		FC771E6615AA1A5000EC29A1 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FC771E6D15AA1C2F00EC29A1 /* IntoneFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoneFirstViewController.h; sourceTree = "<group>"; };
+		FC771E6E15AA1C2F00EC29A1 /* IntoneFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoneFirstViewController.m; sourceTree = "<group>"; };
+		FC771E7415AB52B600EC29A1 /* PrayerCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerCategory.h; sourceTree = "<group>"; };
+		FC771E7515AB52B600EC29A1 /* PrayerCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerCategory.m; sourceTree = "<group>"; };
+		FCA033D315AF6F8300D4B09C /* intone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intone.xml; sourceTree = "<group>"; };
+		FCA033D915AFF9EE00D4B09C /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA033DA15AFF9EE00D4B09C /* libxml2.2.7.3.dylib in Frameworks */,
 				FC771E4615AA1A5000EC29A1 /* UIKit.framework in Frameworks */,
 				FC771E4815AA1A5000EC29A1 /* Foundation.framework in Frameworks */,
 				FC771E4A15AA1A5000EC29A1 /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +66,7 @@
 		FC771E3615AA1A5000EC29A1 = {
 			isa = PBXGroup;
 			children = (
+				FCA033D915AFF9EE00D4B09C /* libxml2.2.7.3.dylib */,
 				FC771E4B15AA1A5000EC29A1 /* Intone */,
 				FC771E4415AA1A5000EC29A1 /* Frameworks */,
 				FC771E4215AA1A5000EC29A1 /* Products */,
@@ -91,15 +97,15 @@
 				FC771E5415AA1A5000EC29A1 /* IntoneAppDelegate.h */,
 				FC771E5515AA1A5000EC29A1 /* IntoneAppDelegate.m */,
 				FC771E5715AA1A5000EC29A1 /* MainStoryboard.storyboard */,
-				FC771E5A15AA1A5000EC29A1 /* IntoneFirstViewController.h */,
-				FC771E5B15AA1A5000EC29A1 /* IntoneFirstViewController.m */,
 				FC771E5D15AA1A5000EC29A1 /* first.png */,
 				FC771E5F15AA1A5000EC29A1 /* first@2x.png */,
-				FC771E6115AA1A5000EC29A1 /* IntoneSecondViewController.h */,
-				FC771E6215AA1A5000EC29A1 /* IntoneSecondViewController.m */,
 				FC771E6415AA1A5000EC29A1 /* second.png */,
 				FC771E6615AA1A5000EC29A1 /* second@2x.png */,
 				FC771E4C15AA1A5000EC29A1 /* Supporting Files */,
+				FC771E6D15AA1C2F00EC29A1 /* IntoneFirstViewController.h */,
+				FC771E6E15AA1C2F00EC29A1 /* IntoneFirstViewController.m */,
+				FC771E7415AB52B600EC29A1 /* PrayerCategory.h */,
+				FC771E7515AB52B600EC29A1 /* PrayerCategory.m */,
 			);
 			path = Intone;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 		FC771E4C15AA1A5000EC29A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCA033D315AF6F8300D4B09C /* intone.xml */,
 				FC771E4D15AA1A5000EC29A1 /* Intone-Info.plist */,
 				FC771E4E15AA1A5000EC29A1 /* InfoPlist.strings */,
 				FC771E5115AA1A5000EC29A1 /* main.m */,
@@ -173,6 +180,7 @@
 				FC771E6015AA1A5000EC29A1 /* first@2x.png in Resources */,
 				FC771E6515AA1A5000EC29A1 /* second.png in Resources */,
 				FC771E6715AA1A5000EC29A1 /* second@2x.png in Resources */,
+				FCA033D415AF6F8300D4B09C /* intone.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +193,8 @@
 			files = (
 				FC771E5215AA1A5000EC29A1 /* main.m in Sources */,
 				FC771E5615AA1A5000EC29A1 /* IntoneAppDelegate.m in Sources */,
-				FC771E5C15AA1A5000EC29A1 /* IntoneFirstViewController.m in Sources */,
-				FC771E6315AA1A5000EC29A1 /* IntoneSecondViewController.m in Sources */,
+				FC771E6F15AA1C2F00EC29A1 /* IntoneFirstViewController.m in Sources */,
+				FC771E7615AB52B600EC29A1 /* PrayerCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +270,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Intone/Intone-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "Intone/Intone-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -273,8 +282,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Intone/Intone-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "Intone/Intone-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SDK_DIR)\"/usr/include/libxml2\n\n\"$(SDK_DIR)\"/usr/include/libxml2\n\n\"$(SDK_DIR)\"/usr/include/libxml2/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +309,7 @@
 				FC771E6C15AA1A5000EC29A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

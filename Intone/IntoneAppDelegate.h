@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IntoneAppDelegate : UIResponder <UIApplicationDelegate>
+@interface IntoneAppDelegate : UIResponder <UIApplicationDelegate> {     
+    NSArray *_records;
+   
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (retain) NSArray *records;
 
 @end

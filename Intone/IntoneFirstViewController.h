@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IntoneFirstViewController : UIViewController
+@interface IntoneFirstViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITableViewCell *tableView;
 
+@property (copy, nonatomic) NSMutableArray *listData;
 @end
