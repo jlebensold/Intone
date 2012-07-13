@@ -22,46 +22,11 @@
 {
 
     prayerCategories = [NSMutableArray arrayWithCapacity:15];
-    /*    */
-    PrayerCategory *album1 = [[PrayerCategory alloc] init];
-    PrayerCategory *album2 = [[PrayerCategory alloc] init];
-    PrayerCategory *album3 = [[PrayerCategory alloc] init];
-    PrayerCategory *album4 = [[PrayerCategory alloc] init];
-    PrayerCategory *album5 = [[PrayerCategory alloc] init];
-    
-    album1.categoryName = @"Graduation";
-    album2.categoryName = @"Dark and Twisted Fantasy";
-    album3.categoryName = @"Torches";
-    album4.categoryName = @"Nothing But The Beat";
-    album5.categoryName = @"Angles";
     
     
-    album1.categoryCount = 5;
-    album2.categoryCount = 5;
-    album3.categoryCount = 5;
-    album4.categoryCount = 5;
-    album5.categoryCount = 5;
-    
-    [prayerCategories addObject:album1];
-    /*
-    [prayerCategories addObject:album2];
-    [prayerCategories addObject:album3];
-    [prayerCategories addObject:album4];
-    [prayerCategories addObject:album5];
-*/
-    //UITabBarController *tabBarController = 
-    //    (UITabBarController *)self.window.rootViewController;
     UINavigationController *navigationController = 
         (UINavigationController *)self.window.rootViewController;
 	
-//    UINavigationController *navigationController = 
-//    [[tabBarController viewControllers] objectAtIndex:0];
-	
-//    AlbumViewController *albumsViewController = 
-//    [[navigationController viewControllers] objectAtIndex:0];
-//	albumsViewController.albums = albums;
-
-
     // XML
 
     NSString *path = [[NSBundle mainBundle] pathForResource:@"intone" ofType:@"xml"];
