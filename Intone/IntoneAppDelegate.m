@@ -52,12 +52,25 @@
 				currentTagName = [NSString stringWithCString:temp 
                                                     encoding:NSUTF8StringEncoding];
 				if ([currentTagName isEqualToString:@"category"]) {
-                    NSString* foo =  [NSString stringWithUTF8String:(const char *) (char*) xmlTextReaderGetAttribute(reader, BAD_CAST "title" )];
                     PrayerCategory *pc = [[PrayerCategory alloc] init];
-                    pc.categoryName = foo;
+                    pc.categoryName = [NSString stringWithUTF8String:(const char *) (char*) xmlTextReaderGetAttribute(reader, BAD_CAST "title" )];
                     pc.categoryCount = 3;
+
                     [prayerCategories addObject:pc];
 				}	
+				if ([currentTagName isEqualToString:@"prayer"]) {
+                    PrayerCategory* curCategory;
+                    Prayer *p = [[Prayer alloc] init];
+                    
+                    xmlNodePtr node = xmlTextReaderCurrentNode(reader);
+                    
+                    NSString *title = [NSString stringWithUTF8String:(const char *) (char*) xmlTextReaderGetAttribute(reader, BAD_CAST "title" )];
+                    
+                    for(PrayerCategory *pc in  prayerCategories) {
+                        NSLog([NSString stringWithFormat:@"%@",pc.categoryName]);
+                    }
+                    
+                }
 				continue;
 			case XML_READER_TYPE_TEXT:
 				//The current tag has a text value, stick it into the current person

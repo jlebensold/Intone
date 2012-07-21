@@ -10,5 +10,5 @@
 
 @implementation PrayerCategory
 @synthesize categoryName, categoryCount;
-
+@synthesize prayers;
 @end

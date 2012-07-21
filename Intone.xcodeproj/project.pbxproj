@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3E235B15B2058D0098E6CE /* PrayerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */; };
+		FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235E15B2071E0098E6CE /* Prayer.m */; };
 		FC771E4615AA1A5000EC29A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4515AA1A5000EC29A1 /* UIKit.framework */; };
 		FC771E4815AA1A5000EC29A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4715AA1A5000EC29A1 /* Foundation.framework */; };
 		FC771E4A15AA1A5000EC29A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4915AA1A5000EC29A1 /* CoreGraphics.framework */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC3E235915B2058D0098E6CE /* PrayerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerPickerViewController.h; sourceTree = "<group>"; };
+		FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerPickerViewController.m; sourceTree = "<group>"; };
+		FC3E235D15B2071E0098E6CE /* Prayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prayer.h; sourceTree = "<group>"; };
+		FC3E235E15B2071E0098E6CE /* Prayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prayer.m; sourceTree = "<group>"; };
 		FC771E4115AA1A5000EC29A1 /* Intone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC771E4515AA1A5000EC29A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC771E4715AA1A5000EC29A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +112,10 @@
 				FC771E6E15AA1C2F00EC29A1 /* IntoneFirstViewController.m */,
 				FC771E7415AB52B600EC29A1 /* PrayerCategory.h */,
 				FC771E7515AB52B600EC29A1 /* PrayerCategory.m */,
+				FC3E235915B2058D0098E6CE /* PrayerPickerViewController.h */,
+				FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */,
+				FC3E235D15B2071E0098E6CE /* Prayer.h */,
+				FC3E235E15B2071E0098E6CE /* Prayer.m */,
 			);
 			path = Intone;
 			sourceTree = "<group>";
@@ -195,6 +205,8 @@
 				FC771E5615AA1A5000EC29A1 /* IntoneAppDelegate.m in Sources */,
 				FC771E6F15AA1C2F00EC29A1 /* IntoneFirstViewController.m in Sources */,
 				FC771E7615AB52B600EC29A1 /* PrayerCategory.m in Sources */,
+				FC3E235B15B2058D0098E6CE /* PrayerPickerViewController.m in Sources */,
+				FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

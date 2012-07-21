@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Prayer.h"
 
 @interface PrayerCategory : NSObject
 
 @property (nonatomic, copy) NSString *categoryName;
 @property (nonatomic, assign) int categoryCount;
-
+@property (nonatomic, copy) NSMutableArray *prayers;
 @end
