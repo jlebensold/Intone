@@ -9,6 +9,6 @@
 #import "PrayerCategory.h"
 
 @implementation PrayerCategory
-@synthesize categoryName, categoryCount;
+@synthesize categoryName, categoryCount, description;
 @synthesize prayers;
 @end

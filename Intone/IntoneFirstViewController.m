@@ -69,7 +69,7 @@
 	
     PrayerCategory *pc = [self.listData objectAtIndex:indexPath.row];
 	cell.textLabel.text = pc.categoryName;
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",pc.categoryCount ];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%d",pc.prayers.count ];
     
     return cell;
 }

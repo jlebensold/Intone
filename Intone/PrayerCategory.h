@@ -12,6 +12,7 @@
 @interface PrayerCategory : NSObject
 
 @property (nonatomic, copy) NSString *categoryName;
+@property NSString *description;
 @property (nonatomic, assign) int categoryCount;
 @property (nonatomic, copy) NSMutableArray *prayers;
 @end

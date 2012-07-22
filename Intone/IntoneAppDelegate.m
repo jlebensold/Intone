@@ -12,7 +12,7 @@
 #include <libxml/xmlreader.h>
 
 @implementation IntoneAppDelegate {
-    NSMutableArray *prayerCategories;
+    NSMutableArray *prayerCategories, *prayers;
     NSArray *records;
 }
 @synthesize records = _records;
@@ -22,74 +22,88 @@
 {
 
     prayerCategories = [NSMutableArray arrayWithCapacity:15];
-    
+    prayers = [NSMutableArray arrayWithCapacity:15];
     
     UINavigationController *navigationController = 
         (UINavigationController *)self.window.rootViewController;
 	
     // XML
-
     NSString *path = [[NSBundle mainBundle] pathForResource:@"intone" ofType:@"xml"];
     NSData *xmlData = [NSData dataWithContentsOfFile:path];
-    xmlTextReaderPtr reader = xmlReaderForMemory([xmlData bytes], 
-                                                 [xmlData length], 
-                                                 [path UTF8String], nil, 
-                                                 (XML_PARSE_NOBLANKS | XML_PARSE_NOCDATA | XML_PARSE_NOERROR | XML_PARSE_NOWARNING));
-    if (!reader) {
-        NSLog(@"Failed to load xmlreader");
-        return NO;
-    }
-	NSString *currentTagName = nil;
-	NSDictionary *currentPerson = nil;
-	NSString *currentTagValue = nil;
-	char* temp;
-	while (true) {
-		if (!xmlTextReaderRead(reader)) break;
-		switch (xmlTextReaderNodeType(reader)) {
-			case XML_READER_TYPE_ELEMENT:
-				//We are starting an element
-				temp =  (char*)xmlTextReaderConstName(reader);
-				currentTagName = [NSString stringWithCString:temp 
-                                                    encoding:NSUTF8StringEncoding];
-				if ([currentTagName isEqualToString:@"category"]) {
-                    PrayerCategory *pc = [[PrayerCategory alloc] init];
-                    pc.categoryName = [NSString stringWithUTF8String:(const char *) (char*) xmlTextReaderGetAttribute(reader, BAD_CAST "title" )];
-                    pc.categoryCount = 3;
+    xmlParserObject =[[NSXMLParser alloc]initWithData:xmlData];
+    //TODO: move parser to delegate
+    [xmlParserObject setDelegate:self];    
+    //asking the xmlparser object to begin with its parsing
+    [xmlParserObject parse];
 
-                    [prayerCategories addObject:pc];
-				}	
-				if ([currentTagName isEqualToString:@"prayer"]) {
-                    PrayerCategory* curCategory;
-                    Prayer *p = [[Prayer alloc] init];
-                    
-                    xmlNodePtr node = xmlTextReaderCurrentNode(reader);
-                    
-                    NSString *title = [NSString stringWithUTF8String:(const char *) (char*) xmlTextReaderGetAttribute(reader, BAD_CAST "title" )];
-                    
-                    for(PrayerCategory *pc in  prayerCategories) {
-                        NSLog([NSString stringWithFormat:@"%@",pc.categoryName]);
-                    }
-                    
-                }
-				continue;
-			case XML_READER_TYPE_TEXT:
-				//The current tag has a text value, stick it into the current person
-				temp = (char*)xmlTextReaderConstValue(reader);
-				currentTagValue = [NSString stringWithCString:temp 
-                                                     encoding:NSUTF8StringEncoding];
-				if (!currentPerson) continue;
-				[currentPerson setValue:currentTagValue forKey:currentTagName];
-				currentTagValue = nil;
-				currentTagName = nil;
-			default: continue;
-		}
-	}
+        
     IntoneFirstViewController *intoneFirstViewController = 
     [[navigationController viewControllers] objectAtIndex:0];
 	intoneFirstViewController.listData = prayerCategories;
 
-    // Override point for customization after application launch.
     return YES;
+}
+#pragma mark NSXMLParser delegate
+
+//below delegate method is sent by a parser object to provide its delegate when it encounters a start tag 
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
+{
+	//if element name is equat to item then only i am assingning memory to the NSObject class
+	if([elementName isEqualToString:@"prayer"]){    
+        prayer = [[Prayer alloc] init];  
+    }
+    else if([elementName isEqualToString:@"text"]){
+        prayer.text = nodecontent;
+    }
+    else if([elementName isEqualToString:@"excerpt"]){
+        prayer.excerpt = nodecontent;
+    }
+    else if([elementName isEqualToString:@"author"]){
+        prayer.author = nodecontent;
+    }
+	else if([elementName isEqualToString:@"category"]){
+		prayerCategory =[[PrayerCategory alloc]init];
+        prayers = [NSMutableArray arrayWithCapacity:15];
+        NSString *title = [attributeDict objectForKey:@"title"];
+        if (title)
+            prayerCategory.categoryName = title;
+	}
+
+	
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
+{
+    if (!nodecontent) {
+        // currentStringValue is an NSMutableString instance variable
+        nodecontent = [[NSMutableString alloc] initWithCapacity:50 ];
+    }
+  //  [nodecontent appendString:string];
+  //  nodecontent = [[NSMutableString alloc] initWithString:string];
+    
+	//whatever data i am getting from node i am appending it to the nodecontent variable
+	[nodecontent appendString:[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+//    NSLog(@"node content = %@",nodecontent);
+}
+
+//bellow delegate method specify when it encounter end tag of specific that tag
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+
+	
+	//finally when we reaches the end of tag i am adding data inside the NSMutableArray
+	if([elementName isEqualToString:@"category"]){  
+        prayerCategory.prayers = prayers;
+		[prayerCategories addObject:prayerCategory];
+        prayerCategory = nil;
+	}
+    if([elementName isEqualToString:@"prayer"]){        
+		[prayers addObject:prayer];
+        prayer = nil;
+	}
+	//reallocate the memory to get new content data from file
+	nodecontent=[[NSMutableString alloc]init];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
