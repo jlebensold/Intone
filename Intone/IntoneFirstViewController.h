@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface IntoneFirstViewController : UITableViewController
-@property (weak, nonatomic) IBOutlet UITableViewCell *tableView;
+//@property (weak, nonatomic) IBOutlet UITableViewCell *tableView;
 
 @property (copy, nonatomic) NSMutableArray *listData;
 @end

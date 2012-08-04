@@ -10,6 +10,7 @@
 		FC3E235B15B2058D0098E6CE /* PrayerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */; };
 		FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235E15B2071E0098E6CE /* Prayer.m */; };
 		FC5D58B915BB3B3D0014F372 /* IntoneParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D58B815BB3B3D0014F372 /* IntoneParser.m */; };
+		FC5D58C915BDD3F60014F372 /* PrayerReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D58C815BDD3F60014F372 /* PrayerReaderViewController.m */; };
 		FC771E4615AA1A5000EC29A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4515AA1A5000EC29A1 /* UIKit.framework */; };
 		FC771E4815AA1A5000EC29A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4715AA1A5000EC29A1 /* Foundation.framework */; };
 		FC771E4A15AA1A5000EC29A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC771E4915AA1A5000EC29A1 /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 		FC3E235E15B2071E0098E6CE /* Prayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prayer.m; sourceTree = "<group>"; };
 		FC5D58B715BB3B3D0014F372 /* IntoneParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoneParser.h; sourceTree = "<group>"; };
 		FC5D58B815BB3B3D0014F372 /* IntoneParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoneParser.m; sourceTree = "<group>"; };
+		FC5D58C715BDD3F60014F372 /* PrayerReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerReaderViewController.h; sourceTree = "<group>"; };
+		FC5D58C815BDD3F60014F372 /* PrayerReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerReaderViewController.m; sourceTree = "<group>"; };
 		FC771E4115AA1A5000EC29A1 /* Intone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC771E4515AA1A5000EC29A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC771E4715AA1A5000EC29A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				FC3E235E15B2071E0098E6CE /* Prayer.m */,
 				FC5D58B715BB3B3D0014F372 /* IntoneParser.h */,
 				FC5D58B815BB3B3D0014F372 /* IntoneParser.m */,
+				FC5D58C715BDD3F60014F372 /* PrayerReaderViewController.h */,
+				FC5D58C815BDD3F60014F372 /* PrayerReaderViewController.m */,
 			);
 			path = Intone;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				FC3E235B15B2058D0098E6CE /* PrayerPickerViewController.m in Sources */,
 				FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */,
 				FC5D58B915BB3B3D0014F372 /* IntoneParser.m in Sources */,
+				FC5D58C915BDD3F60014F372 /* PrayerReaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

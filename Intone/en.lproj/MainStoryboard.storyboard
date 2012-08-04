@@ -42,7 +42,7 @@
                                 </view>
                                 <color key="backgroundColor" red="0.88554216870000002" green="0.77108433730000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="Nal-5K-VXA" kind="push" id="I5c-3t-hAH"/>
+                                    <segue destination="Nal-5K-VXA" kind="push" identifier="prayerpicker" id="I5c-3t-hAH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="7eB-pc-6ks" detailTextLabel="diN-2X-PkS" style="IBUITableViewCellStyleValue1" id="RmD-f2-YKH">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PrayerCell" textLabel="7eB-pc-6ks" detailTextLabel="diN-2X-PkS" style="IBUITableViewCellStyleValue1" id="RmD-f2-YKH">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -86,6 +86,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="ZQb-lA-faB" kind="push" identifier="reader" id="cmc-Yq-Haw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -96,6 +99,31 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="738" y="187"/>
+        </scene>
+        <!--Prayer Reader View Controller-->
+        <scene sceneID="1H5-YJ-mEN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtP-PE-wWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController wantsFullScreenLayout="YES" id="ZQb-lA-faB" customClass="PrayerReaderViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIR-bE-eeJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="fsP-5r-0fM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="fsP-5r-0fM" id="CtV-zP-D1S"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1118" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WKB-vw-ocd">
@@ -116,12 +144,15 @@
     <classes>
         <class className="IntoneFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IntoneFirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableViewCell"/>
-            </relationships>
         </class>
         <class className="PrayerPickerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PrayerPickerViewController.h"/>
+        </class>
+        <class className="PrayerReaderViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PrayerReaderViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

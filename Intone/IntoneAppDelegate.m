@@ -53,16 +53,7 @@
 	if([elementName isEqualToString:@"prayer"]){    
         prayer = [[Prayer alloc] init];  
     }
-    else if([elementName isEqualToString:@"text"]){
-        prayer.text = nodecontent;
-    }
-    else if([elementName isEqualToString:@"excerpt"]){
-        prayer.excerpt = nodecontent;
-    }
-    else if([elementName isEqualToString:@"author"]){
-        prayer.author = nodecontent;
-    }
-	else if([elementName isEqualToString:@"category"]){
+    else if([elementName isEqualToString:@"category"]){
 		prayerCategory =[[PrayerCategory alloc]init];
         prayers = [NSMutableArray arrayWithCapacity:15];
         NSString *title = [attributeDict objectForKey:@"title"];
@@ -79,7 +70,7 @@
         // currentStringValue is an NSMutableString instance variable
         nodecontent = [[NSMutableString alloc] initWithCapacity:50 ];
     }
-  //  [nodecontent appendString:string];
+//    [nodecontent appendString:string];
   //  nodecontent = [[NSMutableString alloc] initWithString:string];
     
 	//whatever data i am getting from node i am appending it to the nodecontent variable
@@ -102,6 +93,16 @@
 		[prayers addObject:prayer];
         prayer = nil;
 	}
+    else if([elementName isEqualToString:@"text"]){
+        prayer.text = nodecontent;
+    }
+    else if([elementName isEqualToString:@"excerpt"]){
+        prayer.excerpt = nodecontent;
+    }
+    else if([elementName isEqualToString:@"author"]){
+        prayer.author = nodecontent;
+    }
+	
 	//reallocate the memory to get new content data from file
 	nodecontent=[[NSMutableString alloc]init];
 }
