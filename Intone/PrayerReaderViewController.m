@@ -28,25 +28,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *html = [NSString stringWithFormat:@"<html> \n"
-                                   "<head> \n"
-                                   "<style type=\"text/css\"> \n"
-                                   "body {font-family: \"%@\"; font-size: %@;}\n"
-                      ".prayer {margin: 1em; }\n"
-                      ".prayer p:first-child:first-letter { "
-                      "font-family: Old English, Georgia,serif;"
-                      "font-size: 140%;"
-                      "line-height: 0.85em;"
-                      "float:left;"
-                      "margin-right: 0.05em;"
-                      "margin-bottom:-0.25em;"
-                      "}"
-                                    "</style> \n"
-                                   "</head> \n"
-                                   "<body><div class=\"prayer\">%@</div></body> \n"
-                                   "</html>", @"Georgia",@"45", prayer.text];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"style" ofType:@"css"];
+    NSString *cssString = [NSString stringWithContentsOfFile:path];
+    
+    NSString *html = [NSString stringWithFormat: cssString, @"Georgia",@"45", prayer.text];
 
-    [webView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://localhost"]];  
+    [webView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://localhost"]];
 }
 
 - (void)viewDidUnload

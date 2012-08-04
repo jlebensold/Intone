@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633B747E15CD2BB6008A6C1A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 633B747D15CD2BB6008A6C1A /* style.css */; };
 		FC3E235B15B2058D0098E6CE /* PrayerPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */; };
 		FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3E235E15B2071E0098E6CE /* Prayer.m */; };
 		FC5D58B915BB3B3D0014F372 /* IntoneParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D58B815BB3B3D0014F372 /* IntoneParser.m */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		633B747D15CD2BB6008A6C1A /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		FC3E235915B2058D0098E6CE /* PrayerPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerPickerViewController.h; sourceTree = "<group>"; };
 		FC3E235A15B2058D0098E6CE /* PrayerPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerPickerViewController.m; sourceTree = "<group>"; };
 		FC3E235D15B2071E0098E6CE /* Prayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prayer.h; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				FC771E4E15AA1A5000EC29A1 /* InfoPlist.strings */,
 				FC771E5115AA1A5000EC29A1 /* main.m */,
 				FC771E5315AA1A5000EC29A1 /* Intone-Prefix.pch */,
+				633B747D15CD2BB6008A6C1A /* style.css */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				FC771E6515AA1A5000EC29A1 /* second.png in Resources */,
 				FC771E6715AA1A5000EC29A1 /* second@2x.png in Resources */,
 				FCA033D415AF6F8300D4B09C /* intone.xml in Resources */,
+				633B747E15CD2BB6008A6C1A /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
