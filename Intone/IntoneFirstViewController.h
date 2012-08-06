@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface IntoneFirstViewController : UITableViewController
-//@property (weak, nonatomic) IBOutlet UITableViewCell *tableView;
+#import "PrayerGrouping.h"
+@interface IntoneFirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet PrayerGrouping *prayerGroupingTableView;
 
 @property (copy, nonatomic) NSMutableArray *listData;
 @end

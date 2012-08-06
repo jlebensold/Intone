@@ -14,12 +14,13 @@
 @end
 
 @implementation IntoneFirstViewController
-//@synthesize tableView;
+@synthesize tableView;
+@synthesize prayerGroupingTableView;
 @synthesize listData;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+//    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [prayerGroupingTableView setDataSource:self];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -39,6 +41,7 @@
 - (void)viewDidUnload
 {
     [self setTableView:nil];
+    [self setPrayerGroupingTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

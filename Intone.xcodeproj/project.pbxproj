@@ -27,6 +27,7 @@
 		FC771E7615AB52B600EC29A1 /* PrayerCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FC771E7515AB52B600EC29A1 /* PrayerCategory.m */; };
 		FCA033D415AF6F8300D4B09C /* intone.xml in Resources */ = {isa = PBXBuildFile; fileRef = FCA033D315AF6F8300D4B09C /* intone.xml */; };
 		FCA033DA15AFF9EE00D4B09C /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA033D915AFF9EE00D4B09C /* libxml2.2.7.3.dylib */; };
+		FCC66F1015D0678100BAD461 /* PrayerGrouping.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC66F0F15D0678100BAD461 /* PrayerGrouping.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		FC771E7515AB52B600EC29A1 /* PrayerCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerCategory.m; sourceTree = "<group>"; };
 		FCA033D315AF6F8300D4B09C /* intone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = intone.xml; sourceTree = "<group>"; };
 		FCA033D915AFF9EE00D4B09C /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
+		FCC66F0E15D0678100BAD461 /* PrayerGrouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerGrouping.h; sourceTree = "<group>"; };
+		FCC66F0F15D0678100BAD461 /* PrayerGrouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerGrouping.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				FC5D58B815BB3B3D0014F372 /* IntoneParser.m */,
 				FC5D58C715BDD3F60014F372 /* PrayerReaderViewController.h */,
 				FC5D58C815BDD3F60014F372 /* PrayerReaderViewController.m */,
+				FCC66F0E15D0678100BAD461 /* PrayerGrouping.h */,
+				FCC66F0F15D0678100BAD461 /* PrayerGrouping.m */,
 			);
 			path = Intone;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				FC3E235F15B2071E0098E6CE /* Prayer.m in Sources */,
 				FC5D58B915BB3B3D0014F372 /* IntoneParser.m in Sources */,
 				FC5D58C915BDD3F60014F372 /* PrayerReaderViewController.m in Sources */,
+				FCC66F1015D0678100BAD461 /* PrayerGrouping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
